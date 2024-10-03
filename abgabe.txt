@@ -1,0 +1,3 @@
+Meine lösung ist auf meinem Github Repositorie
+
+https://github.com/Luna-Schaetzle/INFI_Informations_Systeme/tree/main/Uebung_1_NumbPy
