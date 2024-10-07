@@ -25,6 +25,9 @@ print("Mean Temp 1990:", mean_temp_1990)
 print("Mean Temp 2000:", mean_temp_2000)
 print("Mean Temp 2010:", mean_temp_2010)
 
+# interpretation der Daten in die Grafik einbauen
+print("Die durchschnittliche Temperatur der Jahre wird nicht nur wärmer, sondern auch extremer wie wir im Jahr 2010 sehen können.") 
+
 # Gegenüberstellung der Mitteltemperaturen
 plt.boxplot([d[year == 1980, 6], d[year == 1990, 6], d[year == 2000, 6], d[year == 2010, 6]])
 plt.xticks([1,2,3,4], ["1980", "1990", "2000", "2010"])

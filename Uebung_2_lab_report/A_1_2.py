@@ -9,6 +9,9 @@ d = np.genfromtxt('/home/luna/5BHWII/INFI_Informations_Systeme/Uebung_2_lab_repo
 print("Welches Jahr soll dargestellt werden?")
 year_input = int(input())
 
+# Interpretation der Daten in die Grafik einbauen
+print("Wir sehen einen eindeutigen Jahreszeitenverlauf, wobei die Temperaturen im Sommer am höchsten sind und im Winter am niedrigsten ist.")
+
 plt.title("Mean temperature of every day in the year " + str(year_input))
 plt.xlabel("Day")
 plt.ylabel("Mean Temperature")
