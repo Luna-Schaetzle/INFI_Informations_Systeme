@@ -1,5 +1,11 @@
 
-# Auswertung 2
+# Auswertung von Luna Schätzle
+
+## Einleitung
+
+In dieser Auswertung werden die Nächtigungsdaten der Wintermonate in Tirol von 2000 bis 2023 analysiert. Ziel ist es, die Entwicklung der Tourismuszahlen zu untersuchen und verschiedene statistische Kennwerte zu berechnen. Die Daten werden bereinigt, grafisch dargestellt und mit den Einwohnerzahlen der Bezirke verglichen, um ein umfassendes Bild der touristischen Entwicklung zu erhalten.
+
+
 ## Auswertung aufgabe 2.1
 
 Ausgabe eines Programms, das die Daten aus der Datei `Nächtigungen_Wintersaison.csv` einliest und die ersten fünf Zeilen des Datensatzes ausgibt. Anschließend werden alle vollständig leeren Zeilen entfernt und die ersten fünf Zeilen des bereinigten Datensatzes ausgegeben.
@@ -33,7 +39,7 @@ Das Programm zeigt uns die ersten fünf Zeilen des eingelesenen Datensatzes und 
 Nun wollen wir das schön Graphish darstellen. Dafür haben wir die Daten in ein Linien Diagramm geplottet. 
 Welches uns schön zeigt wie sich die Nächtigungen in den Jahren 2000 bis 2023 entwickelt haben.
 
-![alt text](image.png)
+![Verlauf der Nächtigungen in IM](image.png)
 
 Hier sehen wir das die Nächtigungen stiegen bis auf das Corona Jahr 2020. Hier gab es einen starken Einbruch. Danach stiegen die Nächtigungen wieder an.
 
@@ -86,20 +92,7 @@ Gesamtzahl an Touristen pro Jahr:
 2007    24062117.0
 2008    25612058.0
 2009    25584483.0
-2010    25241464.0
-2011    24830645.0
-2012    25699115.0
-2013    26220929.0
-2014    25370402.0
-2015    25960806.0
-2016    26804089.0
-2017    26463873.0
-2018    27583016.0
-2019    27485847.0
-2020    22925568.0
-2021      712998.0
-2022    20909636.0
-2023    25707235.0
+...
 dtype: float64
 
 Gesamtzahl an Touristen über alle Jahre (2000-2023): 575756470
@@ -122,7 +115,7 @@ SZ   3895490.0  4083001.0  4275421.0  4418925.0  4449479.0  4650490.0  4754511.0
 
 und Folgendes Diagramm zeigt die Gesamtzahl an Touristen pro Jahr pro Bezirk:
 
-![alt text](image-1.png)
+![Gesamtzahl im vergleich der Bezirke](image-1.png)
 
 # 4. Gegenüberstellung von Bezirken
 
@@ -132,7 +125,7 @@ Schritte:
 Berechnung der standardisierten Ranges: Stellen Sie sicher, dass die standardisierten Ranges für jede Gemeinde berechnet wurden.
 Erstellung des Boxplots: Nutzen Sie entweder die eingebauten Methoden von Pandas oder Seaborn für eine ansprechendere Darstellung mit individuellen Farben für jeden Bezirk.
 
-![alt text](image-2.png)
+![Gegenüberstellung der Bezike als Boxplot](image-2.png)
 
 Fazit:
 Mit diesem Skript können Sie die standardisierten Ranges der einzelnen Bezirke als Boxplot darstellen, wobei jeder Bezirk eine eigene Farbe erhält. Die Verwendung von Seaborn bietet eine flexiblere und ästhetisch ansprechendere Möglichkeit zur Visualisierung im Vergleich zu den eingebauten Pandas-Methoden. Falls Sie weitere Anpassungen oder Unterstützung benötigen, lassen Sie es mich bitte wissen!
@@ -171,22 +164,7 @@ Jahreswerte für Innsbruck:
 2005: 519628 Nächtigungen
 2006: 508514 Nächtigungen
 2007: 525369 Nächtigungen
-2008: 584257 Nächtigungen
-2009: 533182 Nächtigungen
-2010: 569507 Nächtigungen
-2011: 581081 Nächtigungen
-2012: 631423 Nächtigungen
-2013: 633126 Nächtigungen
-2014: 634591 Nächtigungen
-2015: 667645 Nächtigungen
-2016: 703027 Nächtigungen
-2017: 714566 Nächtigungen
-2018: 737644 Nächtigungen
-2019: 781571 Nächtigungen
-2020: 591010 Nächtigungen
-2021: 82662 Nächtigungen
-2022: 416075 Nächtigungen
-2023: 751321 Nächtigungen
+...
 /home/luna/5BHWII/INFI_Informations_Systeme/Uebung_3/Aufgabe_4_2.py:57: FutureWarning: 
 
 Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
@@ -194,10 +172,19 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
   sns.barplot(x=labels, y=values, palette='terrain')
 ```
 
-![alt text](image-3.png)
+![Jahreswerte der Nächtigungen](image-3.png)
 
 Fazit:
 Mit diesem Skript können Sie die Anzahl der Touristen in Innsbruck für jedes Jahr von 2000 bis 2023 visualisieren. Die Verwendung von Seaborn bietet eine ästhetisch ansprechendere Möglichkeit zur Visualisierung im Vergleich zu den eingebauten Pandas-Methoden. 
+
+
+
+
+
+
+
+
+
 
 # 5. Gegenüberstellung mit den Einwohnerzahlen
 
@@ -217,10 +204,22 @@ Erste fünf Zeilen des eingelesenen Datensatzes:
 
 # Fazit
 
+In dieser Analyse wurden umfangreiche Auswertungen der Nächtigungsdaten in Tirol für die Wintermonate von 2000 bis 2023 durchgeführt. Durch die Bereinigung der Daten und Entfernung vollständig leerer Zeilen konnte ein sauberer Datensatz erstellt werden, der als Grundlage für weitere Analysen diente.
 
+Zunächst wurde eine grafische Darstellung der Nächtigungen über die Jahre hinweg erstellt, die eindrucksvoll zeigt, wie stark die Werte durch die COVID-19-Pandemie im Jahr 2020 beeinflusst wurden. Nach einem Einbruch stiegen die Nächtigungen in den darauffolgenden Jahren wieder an, was eine Erholung des Tourismus verdeutlicht.
+
+Zusätzlich wurden statistische Kennwerte wie das Minimum, Maximum, der Durchschnitt und standardisierte Ranges der Nächtigungen pro Gemeinde und Bezirk berechnet und visualisiert. Diese Kennwerte geben Einblicke in die Schwankungen der Tourismuszahlen und ermöglichen Vergleiche zwischen den Gemeinden und Bezirken.
+
+Die standardisierten Ranges wurden in einem Boxplot dargestellt, was eine detaillierte Vergleichsanalyse der Bezirke ermöglicht. In einem weiteren Schritt wurden die Nächtigungszahlen für Innsbruck pro Jahr gesondert visualisiert, um die Entwicklung innerhalb der Gemeinde zu verdeutlichen.
+
+Die letzte Auswertung verglich die Nächtigungen mit den Einwohnerzahlen in bestimmten Bezirken, um ein Verhältnis zwischen Touristenanzahl und Einwohnern zu untersuchen. Hierzu wurden die Einwohnerzahlen eingelesen und aufbereitet, was die Grundlage für eine vertiefende Analyse der touristischen Belastung pro Bezirk bietet.
+
+Insgesamt bietet die Auswertung eine umfassende Sicht auf die touristische Entwicklung in Tirol über einen Zeitraum von mehr als zwei Jahrzehnten. Die verwendeten Visualisierungen, insbesondere durch Seaborn, ermöglichen eine ansprechende und gut verständliche Darstellung der Daten. Alle Schritte und der vollständige Quellcode sind auf GitHub verfügbar und bieten eine transparente Nachvollziehbarkeit der durchgeführten Analysen.
 
 # Quellcode 
 
 Aller Quellcode ist auf Github:
-https://github.com/Luna-Schaetzle/INFI_Informations_Systeme
+[https://github.com/Luna-Schaetzle/INFI_Informations_Systeme/tree/main/Uebung_3](https://github.com/Luna-Schaetzle/INFI_Informations_Systeme/tree/main/Uebung_3)
+
+
 

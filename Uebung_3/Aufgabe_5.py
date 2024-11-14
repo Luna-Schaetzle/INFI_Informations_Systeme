@@ -7,7 +7,7 @@ import seaborn as sns
 
 # 1.1 Pfade zu den Excel-Dateien (bitte anpassen)
 dateipfad = 'Zeitreihe-Winter-2024011810.xlsx'
-einwohner_dateipfad = 'bev meld.xls'  # Einwohnerdaten
+einwohner_dateipfad = 'Einwohnerzahlen.xls'  # Einwohnerdaten
 
 # 1.2 Einlesen der Touristikdaten
 df_tourismus = pd.read_excel(tourismus_dateipfad, skiprows=[0, 2], header=0)
