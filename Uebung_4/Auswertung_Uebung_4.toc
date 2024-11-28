@@ -1,0 +1,13 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Aufgabe 1: Daten einlesen}{2}{section.2}%
+\contentsline {section}{\numberline {3}Aufgabe 2: Bevölkerungsentwicklung in Tirol}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Bevölkerungsentwicklung}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Prognose}{2}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Aufgabe 3: Bevölkerungsentwicklung in Innsbruck}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Bevölkerungsentwicklung in Innsbruck}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Prognose}{3}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Aufgabe 4: Gegenüberstellung der Bezirke}{3}{section.5}%
+\contentsline {section}{\numberline {6}Fazit}{4}{section.6}%
+\contentsline {section}{\numberline {7}Quellcode}{4}{section.7}%
+\contentsline {section}{\numberline {8}Abbildungen}{5}{section.8}%
