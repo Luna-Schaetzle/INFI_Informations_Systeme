@@ -213,6 +213,10 @@ def main():
 
     print(f'Training abgeschlossen. Generierte Bilder sind im Ordner "{output_dir}" gespeichert.')
 
+    generator.save('generator_model.h5')
+    discriminator.save('discriminator_model.h5')
+    print('Modelle gespeichert.')
+
 # ===========================
 # 10. Skript ausführen
 # ===========================
