@@ -8,15 +8,20 @@ from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.datasets import fashion_mnist
 
 # 1. Laden des Datensatzes
+print("===========================================")
+print("1. Laden des Fashion-MNIST Datensatzes")
+print("===========================================\n")
 print("Lade den Fashion-MNIST Datensatz...")
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 print("Datensatz erfolgreich geladen.\n")
 
 # 2. Überblick über die Daten verschaffen
-
+print("===========================================")
 print("2. Überblick über die Daten verschaffen")
+print("===========================================\n\n\n")
 
 # 2.1.1 Beschaffenheit der Daten abfragen
+
 print("2.1.1 Beschaffenheit der Daten abfragen")
 print(f"x_train shape: {x_train.shape}")  # (60000, 28, 28)
 print(f"y_train shape: {y_train.shape}")  # (60000,)
@@ -39,8 +44,9 @@ for k, v in test_category_counts.items():
 print()
 
 # 3. Visualisierung der Daten
-
+print("===========================================")
 print("3. Visualisierung der Daten")
+print("===========================================\n\n\n")
 
 # 3.1.1 Die ersten 100 Bilder generieren und speichern
 print("3.1.1 Speichern der ersten 100 Bilder")
@@ -92,7 +98,9 @@ print("Bilder nach Kategorien exportiert.\n")
 
 # 4. Aufbauen des Modells
 
+print("===========================================")
 print("4. Aufbauen des neuronalen Netzwerks")
+print("===========================================\n\n\n")
 
 # 4.1 Datenvorbereitung
 print("4.1 Datenvorbereitung")
@@ -122,8 +130,10 @@ model = models.Sequential([
     layers.Dense(num_classes, activation='softmax')  # Ausgabeschicht mit 10 Neuronen
 ])
 
+print("#############################################")
 # Modellübersicht anzeigen
 print("Modellübersicht:")
+print("#############################################")
 model.summary()
 print()
 
@@ -138,7 +148,9 @@ print("Modell kompiliert.\n")
 
 # 5. Training des Modells
 
+print("===========================================")
 print("5. Training des Modells")
+print("===========================================\n\n\n")
 history = model.fit(
     x_train_flat, y_train_cat,
     epochs=40,                       # Anzahl der Epochen
@@ -148,8 +160,9 @@ history = model.fit(
 print("Training abgeschlossen.\n")
 
 # 6. Bewertung des Modells
-
+print("===========================================")
 print("6. Bewertung des Modells")
+print("===========================================\n\n\n")
 score = model.evaluate(x_test_flat, y_test_cat, verbose=2)
 print("Test loss:", score[0])
 print("Test accuracy:", score[1])
@@ -161,8 +174,9 @@ print(np.argmax(predictions[1]))
 
 
 # 7. Visualisierung des Trainingsverlaufs
-
+print("===========================================")
 print("7. Visualisierung des Trainingsverlaufs")
+print("===========================================\n\n\n")
 # Genauigkeit plotten
 plt.figure(figsize=(12, 5))
 
@@ -187,8 +201,9 @@ plt.tight_layout()
 plt.show()
 
 # 8. Speichern des Modells
-
+print("===========================================")
 print("8. Speichern des Modells")
+print("===========================================\n\n\n")
 model_save_path = 'fashion_mnist_model.h5'
 model.save(model_save_path)
 print(f"Modell gespeichert unter '{model_save_path}'.\n")
