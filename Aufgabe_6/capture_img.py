@@ -24,9 +24,9 @@ print("CAP_PROP_GAIN  : '{}'".format(capture.get(cv2.CAP_PROP_GAIN)))
 print("CAP_PROP_CONVERT_RGB : '{}'".format(capture.get(cv2.CAP_PROP_CONVERT_RGB)))
 
 
-what = input("Welche Form [stone, paper, sissors]")
-name = 'luna'
-howoften = 1
+what = input("Welche Form [stone, paper, sissors]:")
+name = input("Name:")
+howoften = 0.10
 
 outdir = os.path.join('/home/luna/5BHWII/INFI_Informations_Systeme/Aufgabe_6/img', what)
 #os.makedirs(outdir)INFI_Informations_Systeme

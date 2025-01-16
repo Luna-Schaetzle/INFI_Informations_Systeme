@@ -1,4 +1,4 @@
-   import numpy as np
+import numpy as np
 import pandas as pd
 import collections #used for counting items of a list
 from tensorflow import keras
@@ -17,7 +17,7 @@ from PIL import Image
 num_classes = 3
 input_shape = (180, 180, 3)
 
-d = keras.preprocessing.image_dataset_from_directory('/home/albert/tmp/img', image_size=(180, 180), label_mode='categorical', batch_size= 1000)
+d = keras.preprocessing.image_dataset_from_directory('/home/luna/5BHWII/INFI_Informations_Systeme/Aufgabe_6/img', image_size=(180, 180), label_mode='categorical', batch_size= 1000)
 
 images = None
 labels = None
@@ -52,7 +52,8 @@ model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accur
 #
 history = model.fit(images, labels, batch_size=128, epochs=1, validation_split=0.1)
 
-image = Image.open('/home/albert/tmp/img/papier/stone_9_albertgreinoecker.png')
+
+image = Image.open('/home/luna/5BHWII/INFI_Informations_Systeme/Aufgabe_6/img/stone_9_luna.png')
 newsize = (180, 180)
 image = image.resize(newsize)
 
@@ -66,15 +67,15 @@ print(pred)
 # How to load and save the model
 # """
 #
-# model.save('/home/albert/model.mdl')
-# model.save_weights("/home/albert/model.h5")
+model.save('/home//home/luna/5BHWII/INFI_Informations_Systeme/Aufgabe_6/model/model.mdl')
+model.save_weights("/home/luan/5BHWII/INFI_Informations_Systeme/Aufgabe_6/model/model.h5")
 #
-# weights = model.get_weights()
-# j =json.dumps(pd.Series(weights).to_json(orient='values'), indent=3)
-# #print(j)
+weights = model.get_weights()
+j =json.dumps(pd.Series(weights).to_json(orient='values'), indent=3)
+print(j)
 #
-# model = keras.models.load_model('/home/albert/model.mdl')
-# model.load_weights("/home/albert/model.h5")
+model = keras.models.load_model('/home/luna/5BHWII/INFI_Informations_Systeme/Aufgabe_6/model/model.mdl')
+model.load_weights("/home/albert/5BHWII/INFI_Informations_Systeme/Aufgabe_6/model/model.h5")
 #
-# model_json = model.to_json()
-# #print (model_json) 
+model_json = model.to_json()
+print (model_json) 
